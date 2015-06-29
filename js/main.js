@@ -16,7 +16,7 @@ document.body.onscroll = toggleScroll;
 function toggleScroll() {
     // if the scroll (or YOffset is less then headerHeight, keep
     // the class 'main-nav'
-    if(window.pageYOffset < headerHeight) {
+    if(window.pageYOffset < headerHeight ) {
         document.getElementById('js-main-nav').className = 'main-nav';
         document.getElementById('js-sticky-nav-filler').style.marginTop = 'inherit';
     // else give js-main-nav the 'triggered' class
@@ -80,7 +80,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 var userTypes = [{
         user     : 'Current Member',
         id       : 'js-logic-path-current-member',
-        content  : 'You are awesome as a current member!',
+        content  : '<p>You are awesome as a current member!</p><div id="attendanceAvatars"><div>',
         form     : '<a href="https://google.com">Link to a form for current members</a>'
     },
     {

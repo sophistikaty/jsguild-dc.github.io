@@ -12,6 +12,7 @@
 
     <!--Google Fonts #bruh-->
     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic|Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!--Those Stylesheets Doe-->
     <link rel="stylesheet" href="css/normalize.css"/>
@@ -22,11 +23,13 @@
 
     <header class="shadow" id="js-header">
         <nav class="main-nav" id="js-main-nav">
+            <h1>Javascript Guild</h1>
+            <p>Washington, DC</p>
             <ul class="nav-list flex-container">
-                <li class="nav-btn"><a href="#" class="nav-btn_link">Who We Are</a></li>
-                <li class="nav-btn"><a href="#" class="nav-btn_link">What We Do</a></li>
-                <li class="nav-btn"><a href="#" class="nav-btn_link">How to Help</a></li>
-                <li class="nav-btn"><a href="#" class="nav-btn_link">Resources</a></li>
+                <li class="nav-btn"><a href="#whoWeAre" class="nav-btn_link">Who We Are</a></li>
+                <li class="nav-btn"><a href="#whatWeDo" class="nav-btn_link">What We Do</a></li>
+                <li class="nav-btn"><a href="#howToHelp" class="nav-btn_link">How to Help</a></li>
+                <li class="nav-btn"><a href="#resources" class="nav-btn_link">Resources</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +45,7 @@
         <!--These elements and their content are dependent on users interaction with the btns above & JS-->
     <div id="userContent">
         <h1  id="js-user"    class="user-header"></h1>
-        <p   id="js-content" class="user-content"></p>
+        <div   id="js-content" class="user-content"></div>
         <div id="js-form"    class="user-form"></div>
     </div>
 
@@ -51,30 +54,30 @@
 
         
 
-        <section class="block block-1">
+        <section id="whoWeAre"class="block block-1">
             <h1 id="js-sticky-nav-filler" class="block-header">Who We Are</h1>
-            <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ex laudantium modi repellendus. A fugit illum impedit itaque rem ullam, voluptatibus! Consequatur corporis earum nisi recusandae tempore unde vero voluptatem!</p>
+            <p class="block-text">Basically, fans of Javascript. From newbies to working developers, we've all got one thing in common: We think Javascript is pretty awesome, and we want to learn and write more, better code using the tools JS provides. </p>
         </section>
 
-        <section class="block block-2">
+        <section id="whatWeDo" class="block block-2">
             <h1 class="block-header">What We Do</h1>
-            <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi iusto sed ut voluptas. Adipisci aliquam at aut eaque iure laboriosam laudantium modi, neque officia suscipit ut voluptas, voluptates voluptatum?</p>
+            <p class="block-text">On Wednesdays, we get together and write Javascript. We cover all kinds of topics, but aim to approach them in ways that are accessible and beneficial to anyone. </p>
         </section>
 
-        <section class="block block-3">
+        <section id="howToHelp" class="block block-3">
             <h1 class="block-header">How to Help</h1>
-            <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto distinctio doloremque eaque eos, illo ipsum itaque laboriosam, maiores mollitia non officiis pariatur perspiciatis possimus, provident quisquam reprehenderit rerum similique!</p>
+            <p class="block-text">Come learn with us. Lend us your questions, suggestions, projects and ideas.</p>
         </section>
 
-        <section class="block block-4">
+        <section id="resources" class="block block-4">
             <div class="flex-container">
                 <div class="flex-1">
                     <h1 class="block-header">Resources</h1>
-                    <p class="block-text">This is some of our most useful resources :</p>
+                    <p class="block-text">Our favorite resources:</p>
                     <ul class="sub-list">
-                        <li><a class="sub-list_link" href="http://eloquentjavascript.net">Eloquent JavaScript</a></li>
-                        <li><a class="sub-list_link" href="https://github.com/JSguild-DC">GitHub | JSGuild</a></li>
-                        <li><a class="sub-list_link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla Developer Network | JavaScript</li>
+                        <li><a class="sub-list_link" href="http://eloquentjavascript.net" target="blank">Eloquent JavaScript</a></li>
+                        <li><a class="sub-list_link" href="https://github.com/JSguild-DC" target="blank">GitHub | JSGuild</a></li>
+                        <li><a class="sub-list_link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">Mozilla Developer Network | JavaScript</li>
                     </ul>
                     </div>
                 <div class="flex-2">

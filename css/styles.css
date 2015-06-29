@@ -1,10 +1,9 @@
 body {
-    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Roboto',"Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     font-size: 22px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
 }
 
@@ -23,12 +22,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header {
-    background-color: yellow;
-    padding: 200px 0 0;
+    background-color: #FFFF39;
+    padding: 15px 0 0;
 }
 
+#js-main-nav h1, #js-main-nav p {
+      padding: 0px 59px;
+}
+
+/*#js-main-nav h1 a, #js-main-nav.sticky-nav h1 a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}*/
+
 .block {
-    padding: 60px;
+    padding: 60px 60px 0px;
 }
 
 .shadow {
@@ -41,7 +50,7 @@ header {
     margin: 15px;
     text-align:center;
     padding:20px 50px;
-    background: #ffff00;
+    background: #FFFF39;
     transition: opacity 1s;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
@@ -62,6 +71,7 @@ header {
 
 .nav-btn:hover a {
     color: #ffffff;
+    font-weight: bold;
     -webkit-transition: all ease 0.7s;
     -moz-transition: all ease 0.7s;
     -o-transition: all ease 0.7s;
@@ -71,16 +81,41 @@ header {
 
 .nav-btn_link {
     color: #000000;
-    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
     text-decoration: none;
 }
 
 .sticky-nav {
     position: fixed;
     top: 0px;
-    background: yellow;
-    opacity: 0.5;
+    background: #FFFF39;
+    opacity: 0.75;
     width: 100%;
+    height: 10%;
+}
+
+nav#js-main-nav.sticky-nav h1, nav#js-main-nav.sticky-nav p, nav#js-main-nav.sticky-nav ul {
+    margin: 0px;
+}
+
+nav#js-main-nav.sticky-nav h1 {
+    font-size: 1em;
+    margin: 7px 0px 0px 0px;
+}
+
+nav#js-main-nav.sticky-nav p {
+    font-size: 12px;
+}
+
+nav#js-main-nav.sticky-nav ul {
+    padding: 0px 0px 0px 233px;
+    font-size: 12px;
+    position: relative;
+        top: -53px;
+}
+
+nav#js-main-nav.sticky-nav li.nav-btn {
+    padding: 10px 20px;
+    border: 1px solid #000000;
 }
 
 #map-canvas {
@@ -91,13 +126,48 @@ header {
 
 .logic-btn {
     width: 20%;
-    height: 100px;
+    height: 200px;
     border: 2px solid black;
-    background-color: white;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
     margin: 2%;
+    background: #000000;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-transition: all ease 0.7s;
+    -moz-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    -ms-transition: all ease 0.7s ;
+    transition: all ease 0.5s ;
+
 }
+
+button#js-logic-path-current-member.logic-btn:hover {
+    background: #FFFF39;
+    color: #000000;
+    border-radius: 50% 0 50% 0;
+}
+
+button#js-logic-path-future-member.logic-btn:hover {
+    background: #4F3AB5;
+    color: #000000;
+    border-radius: 0 50% 0 50%;
+}
+
+button#js-logic-path-employer.logic-btn:hover {
+    background: #D8307F;
+    color: #000000;
+    border-radius: 50% 0 50% 0;
+}
+
+button#js-logic-path-other.logic-btn:hover{
+    background: #FFFF64;
+    color: #000000;
+    border-radius: 0 50% 0 50%;
+}
+
+
+
 
 .user-header,
 .user-content,
