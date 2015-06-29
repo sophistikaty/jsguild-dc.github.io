@@ -137,4 +137,52 @@ function triggerView(){
 
 triggerView();
 
+//Carolyn's test
+
+
+// Tabletop Spreadsheet Functions
+
+window.onload = function() { init() };
+
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1J6B8-GfEcRgFxtdhPNqPOoIow2nbTP7LgML3YsnB8U0/pubhtml?gid=0&single=true';
+
+function init() {
+
+    Tabletop.init( { key: public_spreadsheet_url,
+        callback: showInfo,
+        simpleSheet: true } )
+}
+
+var tabletopData;
+
+function showInfo(data, tabletop) {
+
+    tabletopData = data;
+
+    selectContent();
+}
+
+tabletopData = JSON.stringify(tabletopData);
+
+
+function selectContent () {
+    console.log('tabletopData is ', tabletopData);
+
+    var personName = tabletopData.map(function (item) { 
+
+        return item["Name"]; 
+    }
+
+    ).map( function (content, item) { 
+
+        var index = tabletopData[item];
+        // checkPage(item);
+        return "<p>"+item+"</p>" 
+
+    }).join('');
+
+    document.getElementById('attendanceAvatars').innerHTML = personName;
+
+};
+
 

@@ -5,6 +5,26 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
+    padding-left: 15px;
+}
+
+a {
+      text-decoration: none;
+  color: #1A0A6B;
+  font-weight: bold;
+  background: inherit;
+  padding: 0px
+  -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s ;
+    transition: all ease 1s ;
+}
+
+a:hover {
+    color: #ffffff;
+    padding: 2px 10px;
+    background: #000000;
 }
 
 /* flexbox classes */
@@ -24,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #FFFF39;
     padding: 15px 0 0;
+
 }
 
 #js-main-nav h1, #js-main-nav p {
@@ -61,22 +82,23 @@ header {
 }
 
 .nav-btn:hover {
+    color: #ffffff;
     background:#000000;
-    -webkit-transition: all ease 0.7s;
-    -moz-transition: all ease 0.7s;
-    -o-transition: all ease 0.7s;
-    -ms-transition: all ease 0.7s ;
-    transition: all ease 0.5s ;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s ;
+    transition: all ease 1s ;
 }
 
 .nav-btn:hover a {
-    color: #ffffff;
+    
     font-weight: bold;
-    -webkit-transition: all ease 0.7s;
-    -moz-transition: all ease 0.7s;
-    -o-transition: all ease 0.7s;
-    -ms-transition: all ease 0.7s ;
-    transition: all ease 0.5s ;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s ;
+    transition: all ease 1s ;
 }
 
 .nav-btn_link {
@@ -116,6 +138,13 @@ nav#js-main-nav.sticky-nav ul {
 nav#js-main-nav.sticky-nav li.nav-btn {
     padding: 10px 20px;
     border: 1px solid #000000;
+    /*background: yellow;*/
+   /* opacity: 0.5; the opacity makes it hard to read in my opinion (jb)*/
+    width: 100%;
+     -webkit-box-shadow: 2px 2px 2px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 2px 2px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 2px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  /*  not sure why the shaddow is not applying after the sticky nav is in effect...*/
 }
 
 #map-canvas {
@@ -134,11 +163,11 @@ nav#js-main-nav.sticky-nav li.nav-btn {
     margin: 2%;
     background: #000000;
     border-radius: 0px 0px 0px 0px;
-    -webkit-transition: all ease 0.7s;
-    -moz-transition: all ease 0.7s;
-    -o-transition: all ease 0.7s;
-    -ms-transition: all ease 0.7s ;
-    transition: all ease 0.5s ;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s ;
+    transition: all ease 1s ;
 
 }
 
@@ -186,4 +215,8 @@ button#js-logic-path-other.logic-btn:hover{
 
 .user-form {
 
+}
+
+#whoAreYou { /*hiding the who are you blok until we have the functionality done*/
+    /*display: none;*/
 }

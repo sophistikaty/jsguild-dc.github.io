@@ -26,6 +26,7 @@
             <h1>Javascript Guild</h1>
             <p>Washington, DC</p>
             <ul class="nav-list flex-container">
+
                 <li class="nav-btn"><a href="#whoWeAre" class="nav-btn_link">Who We Are</a></li>
                 <li class="nav-btn"><a href="#whatWeDo" class="nav-btn_link">What We Do</a></li>
                 <li class="nav-btn"><a href="#howToHelp" class="nav-btn_link">How to Help</a></li>
@@ -45,28 +46,29 @@
         <!--These elements and their content are dependent on users interaction with the btns above & JS-->
     <div id="userContent">
         <h1  id="js-user"    class="user-header"></h1>
-        <div   id="js-content" class="user-content"></div>
+        <div id="js-content" class="user-content"></div>
         <div id="js-form"    class="user-form"></div>
     </div>
 
     <div class="flex-container flex-column">
 
-
-        
-
         <section id="whoWeAre"class="block block-1">
             <h1 id="js-sticky-nav-filler" class="block-header">Who We Are</h1>
-            <p class="block-text">Basically, fans of Javascript. From newbies to working developers, we've all got one thing in common: We think Javascript is pretty awesome, and we want to learn and write more, better code using the tools JS provides. </p>
+            <p class="block-text">The JavaScript Guild is a group of General Assembly Alumni who meet every Wednesday to explore all things JavaScript.  Ben Haaland and Victor Salcedo founded the group in the fall of 2014. It has since expanded into two sections and over thirty members.</p>
+
+              <div>Guild Member? <a href="voting.html">Add your idea to the agenda for a session!</a></div>
+              <div id="attendanceAvatars"></div>
+
         </section>
 
         <section id="whatWeDo" class="block block-2">
             <h1 class="block-header">What We Do</h1>
-            <p class="block-text">On Wednesdays, we get together and write Javascript. We cover all kinds of topics, but aim to approach them in ways that are accessible and beneficial to anyone. </p>
+            <p class="block-text">The JS Guild works through the <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a> book by Marijn Haverbeke.  We also do outside projects as a group and with others in the tech community.</p>
         </section>
 
         <section id="howToHelp" class="block block-3">
             <h1 class="block-header">How to Help</h1>
-            <p class="block-text">Come learn with us. Lend us your questions, suggestions, projects and ideas.</p>
+            <p class="block-text">We love having JS masters come and teach us new things!  We also love getting noob's started!  For more information on the Guild, please <a href="mailto:bphaaland@gmail.com"> contact us</a> or <a href="https://github.com/JSguild-DC"> visit our GitHub page!</a></p>
         </section>
 
         <section id="resources" class="block block-4">
@@ -90,6 +92,8 @@
 
 
 <!--Script Files-->
+
+<script src="js/tabletop.js"></script>
 <script src="js/main.js"></script>
 
 </body>
